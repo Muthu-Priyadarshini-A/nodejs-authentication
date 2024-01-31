@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="/css/signup.css">
+    <style>
+        /* Custom CSS to center the form slightly below the middle */
+        html, body {
+            height: 100%;
+            background-color: #f8f9fa; /* Light gray background color */
+        }
+        .signupContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Align items slightly below the middle */
+            height: 90vh; /* Use 90% of the viewport height */
+        }
+        .signupForm {
+            background-color: #ffffff; /* White background color for the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+        .signupHeading {
+            color: #343a40; /* Dark gray color for the heading */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background-color: #007bff; /* Blue color for the primary button */
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container signupContainer">
+    <form action="/signup" method="post" class="col-md-6 signupForm">
+        <h1 class="signupHeading">Sign Up</h1>
+        <div class="form-group">
+            <input class="form-control" type="text" name="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="text" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="confirm_Password" placeholder="Confirm Password">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
+        <div>
+            <p>Already have an account? <a href="/login">Login</a></p>
+        </div>
+
+        <div class="hr">
+            <span class="span1">___________________________</span>
+            <span class="spanor">Or</span>
+            <span class="span2">___________________________</span>
+        </div>
+
+        <div class="form-group">
+            <div class="gbtn">
+                <img class="gimg" src="https://img.icons8.com/color/1x/google-logo.png" alt="Google Logo">
+                <a class="glink" href="/auth/google">Login with Google</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Bootstrap JS (Optional, if you need Bootstrap JavaScript components) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
