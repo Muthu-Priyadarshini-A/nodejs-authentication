@@ -54,5 +54,5 @@ app.use('/', require('./routes'));
 
 
 app.listen(PORT, () => {
-    console.log('The app is runing port no ', PORT);
+    console.log('The app is running in port', PORT);
 })
